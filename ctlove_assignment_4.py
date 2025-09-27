@@ -1,5 +1,5 @@
 student_name = "Cameron Love"
-current_gpa = 4.0
+current_gpa = 3.4
 study_hours = 21
 social_points = 60
 stress_level = 35
@@ -204,6 +204,7 @@ if current_gpa >= 3.5:
         elif favorite_number is favorite_number_answer:
             print("Here is your extra point.")
             exam_score = exam_score + 1
+            print(f"Exam score: {exam_score}")
         elif favorite_number is not favorite_number_answer:
             print("You geussed the wrong number. No extra point for you")
     elif not study_hours >= 20:
@@ -217,6 +218,7 @@ if current_gpa >= 3.5:
         elif favorite_number is favorite_number_answer:
             print("Here is your extra point.")
             exam_score = exam_score + 1
+            print(f"Exam score: {exam_score}")
         elif favorite_number is not favorite_number_answer:
             print("You geussed the wrong number. No extra point for you")
 elif current_gpa >= 3.0:
@@ -231,6 +233,7 @@ elif current_gpa >= 3.0:
         elif favorite_number is favorite_number_answer:
             print("Here is your extra point.")
             exam_score = exam_score + 1
+            print(f"Exam score: {exam_score}")
         elif favorite_number is not favorite_number_answer:
             print("You geussed the wrong number. No extra point for you")
     elif not study_hours >= 20:
@@ -244,6 +247,7 @@ elif current_gpa >= 3.0:
         elif favorite_number is favorite_number_answer:
             print("Here is your extra point.")
             exam_score = exam_score + 1
+            print(f"Exam score: {exam_score}")
         elif favorite_number is not favorite_number_answer:
             print("You geussed the wrong number. No extra point for you")
 elif current_gpa >= 2.5:
@@ -258,6 +262,7 @@ elif current_gpa >= 2.5:
         elif favorite_number is favorite_number_answer:
             print("Here is your extra point.")
             exam_score = exam_score + 1
+            print(f"Exam score: {exam_score}")
         elif favorite_number is not favorite_number_answer:
             print("You geussed the wrong number. No extra point for you")
     elif not study_hours >= 20:
@@ -271,6 +276,7 @@ elif current_gpa >= 2.5:
         elif favorite_number is favorite_number_answer:
             print("Here is your extra point.")
             exam_score = exam_score + 1
+            print(f"Exam score: {exam_score}")
         elif favorite_number is not favorite_number_answer:
             print("You geussed the wrong number. No extra point for you")
 else:
