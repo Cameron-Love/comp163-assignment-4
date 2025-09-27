@@ -80,3 +80,103 @@ elif choice == "C":
         print("Might be time to drop out bud.")
 else:
     print("Invalid Input. Try again.")
+
+print ("What are you studying? Study Pathways: Programming | Math | English | History")
+study_choice = input()
+study_options = ["Programming", "Math", "English", "History"]
+
+if study_choice in study_options:
+    if study_choice == "Programming":
+        print("Your life is gonna be a lot more difficult.")
+        study_hours = study_hours + 10
+        print("+10 study hours")
+        if stress_level <= 80:
+            stress_level = stress_level + 20
+            print("+20 stress level")
+        elif social_points >= 20:
+            social_points = social_points - 20
+            print("-20 social points")
+        elif current_gpa >= 3.5 and stress_level <= 50:
+            print("")
+            print("Hey programming may be hard, but your still doing a great job though!")
+        elif (current_gpa <= 3.9 and current_gpa >= 3.0) or study_hours >= 30:
+            print("Your undoubtedly locked in!")
+            print("+ 0.1 GPA boost")
+            current_gpa = current_gpa + 0.2
+        elif current_gpa <= 2.5:
+            print("You can do better then that!")
+            if social_points >= 50: 
+                current_gpa = current_gpa - 0.2
+                print("Yeah stop being friendly bud. Go do your work.")
+    elif study_choice == "Math":
+        print("Your life is gonna be a litte more difficult.")
+        study_hours = study_hours + 5
+        print("+5 study hours")
+        if stress_level <= 90:
+            stress_level = stress_level + 10
+            print("+10 stress level")
+        elif social_points >= 10:
+            social_points = social_points - 10
+            print("-10 social points")
+        elif current_gpa >= 3.0 and stress_level <= 50:
+            print("")
+            print("Hey math may be hard, but your still doing a great job though!")
+        elif (current_gpa <= 3.8 and current_gpa >= 3.0) or study_hours >= 25:
+            print("Your extremely locked in!")
+            print("+ 0.2 GPA boost")
+            current_gpa = current_gpa + 0.2
+        elif current_gpa <= 2.5:
+            print("You can do better then that!")
+            if social_points >= 60: 
+                current_gpa = current_gpa - 0.2
+                print("Yeah stop being friendly bud. Go lock in.")
+    elif study_choice in "History":
+        print("Your life is a litter easier then the STEM majors!")
+        social_points = social_points + 10
+        print("+10 social points")
+        if study_hours >= 5:
+            study_hours = study_hours - 5
+            print("5 study hours")
+        if stress_level >= 10:
+            stress_level = stress_level - 10
+            print("-10 stress level")
+        elif study_hours >= 5:
+            study_hours = study_hours - 5          
+        elif current_gpa >= 3.0 and stress_level <= 50:
+            print("")
+            print("Hey your doing a outstanding job!")
+        elif (current_gpa <= 3.8 and current_gpa >= 3.0) or study_hours >= 25:
+            print("Your really locked in!")
+            print("+ 0.2 GPA boost")
+            current_gpa = current_gpa + 0.2
+        elif current_gpa <= 2.5:
+            print("You can do better!")
+            if not (social_points >= 20): 
+                social_points = social_points + 20
+                print("Go make some friends!")
+    elif study_choice in "English":
+        print("Your have the easiest major!")
+        social_points = social_points + 20
+        print("+20 social points")
+        if study_hours >= 10:
+            study_hours = study_hours - 10
+            print("-10 study hours")
+        elif stress_level >= 10:
+            stress_level = stress_level - 20
+            print("-20 stress level")
+        elif study_hours >= 10:
+            study_hours = study_hours - 10          
+        elif current_gpa >= 3.0 and stress_level <= 30:
+            print("")
+            print("Hey your doing a great job!")
+        elif (current_gpa <= 3.7 and current_gpa >= 3.0) or study_hours >= 15:
+            print("Your super locked in!")
+            print("+ 0.3 GPA boost")
+            current_gpa = current_gpa + 0.3
+        elif current_gpa <= 2.7:
+            print("You can do better then that!")
+            if (not social_points >= 30): 
+                social_points = social_points + 30
+                print("Go make some friends! You have the time.")
+elif study_choice not in study_options:
+    print("Invalid Choice. Try again.")
